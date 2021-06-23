@@ -1,0 +1,374 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype"), url("../fonts/Montserrat/Montserrat-ExtraBold.svg#Montserrat-ExtraBold") format("svg");
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background: #223311;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, #223311), to(white));
+  background: -o-linear-gradient(top, #223311 31%, white 100%);
+  background: linear-gradient(180deg, #223311 31%, white 100%);
+  font-family: 'Montserrat-Regular', serif;
+}
+
+main {
+  background-image: url("../img/wood.png");
+  background-repeat: no-repeat;
+  background-position: -128px 0px;
+  padding-top: 100px;
+}
+
+header {
+  padding: 10px 15px;
+}
+
+section.s1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.s1 h1 {
+  margin: 0;
+  font-size: 45px;
+  line-height: 1.2;
+  color: white;
+  font-family: 'Montserrat-ExtraBold', serif;
+  letter-spacing: 7px;
+}
+
+section.s1 .info > li:nth-of-type(1) {
+  margin: 0 0 40px 0;
+}
+
+section.s1 .info > li:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+section.s1 .info > li:nth-of-type(3) {
+  margin-bottom: 20px;
+}
+
+section.s1 .info > li:nth-of-type(4) {
+  margin-bottom: 15px;
+}
+
+section.s1 .info > li:nth-of-type(5) {
+  margin-bottom: 45px;
+}
+
+section.s1 .info > li:nth-of-type(3) a,
+section.s1 .info li:nth-of-type(4) a,
+section.s1 .info li:nth-of-type(5) a {
+  color: #ff0;
+}
+
+.forest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat-Regular', serif;
+}
+
+.forest li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.forest li a {
+  font-size: 18px;
+  color: yellow;
+}
+
+.dotte {
+  position: relative;
+}
+
+.dotte:after {
+  content: "";
+  background-color: #ff0;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: -12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.total_tel {
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: yellow;
+  font-family: 'Montserrat-ExtraBold', serif;
+}
+
+.total_tel a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.work_off {
+  text-align: center;
+}
+
+.work_off p {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.l,
+.r {
+  width: 50%;
+}
+
+.l {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.adress {
+  font-family: 'Montserrat-ExtraBold', serif;
+  color: white;
+}
+
+li.streat {
+  margin-bottom: 25px;
+}
+
+.socials a {
+  color: white;
+}
+
+.instagram {
+  position: relative;
+}
+
+.instagram:before {
+  content: "";
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -52px;
+  margin: auto;
+  background-image: url("../img/insta.svg");
+}
+
+.l {
+  position: relative;
+}
+
+.l:before {
+  content: '';
+  width: 345px;
+  height: 138px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  background-image: url("../img/cherepitsa.png");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+nav.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav.header__nav .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.header__nav .header__menu li a {
+  display: inline-block;
+  padding: 10px;
+  color: yellow;
+  border-bottom: 2px solid transparent;
+}
+
+nav.header__nav .header__menu li a:hover {
+  border-bottom: 2px solid yellow;
+}
+
+nav.header__nav .header__menu li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.active {
+  border-bottom: 2px solid yellow !important;
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Поворот первой полосы */
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  -ms-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Исчезание второй полосы */
+
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Поворот последней полосы */
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  -ms-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media screen and (max-width: 900px) {
+  nav.header__nav .header__menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .l:before {
+    top: -50px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  section.s1 h1 {
+    font-size: 35px;
+  }
+
+  .l,
+  .r {
+    width: 100%;
+  }
+
+  .l {
+    padding: 80px 15px;
+  }
+
+  .l {
+    padding: 0px 15px 30px 0px;
+  }
+
+  .l:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  main {
+    padding-top: 30px;
+  }
+
+  main {
+    background-image: none;
+  }
+
+  section.s1 h1 {
+    font-size: 16px;
+  }
+
+  .forest li a {
+    font-size: 15px;
+  }
+
+  .dotte:after {
+    display: none;
+  }
+}
