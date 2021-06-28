@@ -187,17 +187,14 @@ section.s1 .info li:nth-of-type(5) a {
   text-align: center;
 }
 
-.adress {
+.adress,
+.socials a {
   font-family: 'Montserrat-ExtraBold', serif;
-  color: white;
+  color: black;
 }
 
 li.streat {
   margin-bottom: 25px;
-}
-
-.socials a {
-  color: white;
 }
 
 .instagram {
@@ -220,21 +217,7 @@ li.streat {
   position: relative;
 }
 
-.l:before {
-  content: '';
-  width: 345px;
-  height: 138px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  background-image: url("../img/cherepitsa.png");
-  background-repeat: no-repeat;
-  opacity: 0.5;
-}
-
-nav.header__nav {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,30 +228,30 @@ nav.header__nav {
           justify-content: flex-end;
 }
 
-nav.header__nav .header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav.header__nav .header__menu li a {
+.header__nav li a {
   display: inline-block;
   padding: 10px;
   color: yellow;
   border-bottom: 2px solid transparent;
 }
 
-nav.header__nav .header__menu li a:hover {
+.header__nav li a:hover {
   border-bottom: 2px solid yellow;
 }
 
-nav.header__nav .header__menu li:not(:first-child) {
+.header__nav li:not(:first-child) {
   margin-left: 10px;
+}
+
+.header__menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+#menuToggle {
+  display: none;
 }
 
 .active {
@@ -315,22 +298,74 @@ nav.header__nav .header__menu li:not(:first-child) {
 }
 
 @media screen and (max-width: 900px) {
-  nav.header__nav .header__menu {
+  .header {
+    min-height: 60px;
+  }
+
+  .header__menu {
     display: none;
   }
 
   .burger {
     display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10000;
   }
 
-  .l:before {
-    top: -50px;
+  #menuToggle:checked + .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    z-index: 1000;
+  }
+
+  .header__nav li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .header__nav li a {
+    color: #fff;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 780px) {
   section.s1 h1 {
     font-size: 35px;
+  }
+
+  .forest {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .forest {
+    padding: 0 20px;
+  }
+
+  .dotte:after {
+    display: none;
   }
 
   .l,
@@ -344,10 +379,6 @@ nav.header__nav .header__menu li:not(:first-child) {
 
   .l {
     padding: 0px 15px 30px 0px;
-  }
-
-  .l:before {
-    display: none;
   }
 }
 
@@ -364,11 +395,13 @@ nav.header__nav .header__menu li:not(:first-child) {
     font-size: 16px;
   }
 
-  .forest li a {
-    font-size: 15px;
+  .forest {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
-  .dotte:after {
-    display: none;
+  .forest li a {
+    font-size: 15px;
   }
 }
