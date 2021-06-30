@@ -22,6 +22,13 @@
           box-sizing: border-box;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 a {
   text-decoration: none;
 }
@@ -354,6 +361,17 @@ img {
   margin-bottom: 10px;
 }
 
+.home {
+  padding: 10px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.text {
+  padding: 10px;
+  background-color: #fff;
+}
+
 @media screen and (max-width: 900px) {
   .header {
     min-height: 60px;
@@ -407,6 +425,11 @@ img {
 }
 
 @media screen and (max-width: 780px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   section.s1 h1 {
     font-size: 35px;
   }
